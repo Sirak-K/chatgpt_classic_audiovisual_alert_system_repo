@@ -23,8 +23,8 @@
   "completion_settle_seconds": 0.9,
   "minimum_generation_seconds": 0.4,
   "window_title_contains": ["ChatGPT"],
-  "process_names": ["ChatGPT.exe"],
-  "classic_path_contains": ["OpenAI.ChatGPT-Desktop"],
+  "process_names": [],
+  "classic_path_contains": [],
   "generation_button_patterns": [
     "^stop generating$",
     "^stop streaming$",
