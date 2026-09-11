@@ -1,0 +1,2 @@
+psutil>=5.9,<8
+pywinauto==0.6.9

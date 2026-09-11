@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>ChatGPT svar klart</title>
+<HTA:APPLICATION APPLICATIONNAME="KRSChatGPTPopup" BORDER="none" CAPTION="no" MAXIMIZEBUTTON="no" MINIMIZEBUTTON="no" SCROLL="no" SHOWINTASKBAR="no" SINGLEINSTANCE="no" SYSMENU="no" WINDOWSTATE="normal" />
+<style>
+html,body{margin:0;padding:0;background:#08111f;color:#ffd7a3;font-family:"Conthrax SB","Conthrax","Unispace","Segoe UI",sans-serif;overflow:hidden}
+body{border:1px solid #ff9d3d;background:#091426;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08111f',endColorstr='#132549',GradientType=1)}
+.wrap{height:100%;position:relative}.chrome{height:30px;background:#020508;border-bottom:1px solid #ff8e28;color:#ffb96a;position:relative}.chromeTitle{padding:8px 12px 0;font-size:12px;letter-spacing:1px;text-transform:uppercase}.close{position:absolute;top:4px;right:6px;width:24px;height:22px;border:1px solid #ff8e28;background:#1a0600;color:#ffd7a3;cursor:pointer;font:700 14px "Segoe UI"}.frame{position:absolute;top:38px;left:10px;right:10px;bottom:8px;border:1px solid #274974}.inner{position:absolute;top:42px;left:14px;right:14px;bottom:12px;border:1px solid #0f2748}.beam1{position:absolute;top:38px;left:10px;right:86px;height:2px;background:#ff9d3d}.beam2{position:absolute;left:86px;right:10px;bottom:8px;height:2px;background:#ff9d3d}.content{position:relative;width:360px;margin:0 auto;padding:24px 0 14px;height:172px}.title{position:relative;font-size:28px;font-weight:700;width:320px;margin:10px auto 14px;color:#b8ff38;letter-spacing:2px;text-transform:uppercase;line-height:1.05;text-align:center}.body{position:relative;font-family:"Conthrax","Unispace","Segoe UI",sans-serif;font-size:12px;line-height:1.45;width:320px;margin:0 auto 14px;word-wrap:break-word;color:#ffe7c4}.actions{position:relative;width:320px;margin:0 auto;text-align:right}.actions button{font:700 12px "Segoe UI";padding:5px 14px;border:1px solid #ff9d3d;background:#ff9d3d;color:#1b1208;cursor:pointer;text-transform:uppercase}
+</style>
+<script type="text/javascript">
+function q(){var r={},s=window.location.search||"";if(s.charAt(0)==="?")s=s.substring(1);if(!s)return r;var p=s.split("&");for(var i=0;i<p.length;i++){if(!p[i])continue;var a=p[i].split("=");r[decodeURIComponent(a[0]||"")]=decodeURIComponent((a.slice(1).join("=")||"").replace(/\+/g," "));}return r;}
+function closePopup(){window.close();}
+function key(e){var c=e.keyCode||e.which;if(c===27||c===13){closePopup();return false;}return true;}
+function init(){var p=q(),t=p.title||"ChatGPT svar klart",b=p.body||"ChatGPTs svar är klart.",n=parseInt(p.timeout||"10",10);if(!(n>0))n=10;document.title=t;document.getElementById("title").innerText=t;document.getElementById("body").innerText=b;window.resizeTo(460,240);window.moveTo(Math.max(0,Math.round((screen.availWidth-460)/2)),Math.max(0,Math.round(screen.availHeight*.58)-120));window.setTimeout(closePopup,n*1000);document.body.focus();window.focus();}
+</script>
+</head>
+<body onload="init()" onkeydown="return key(event)" tabindex="0">
+<div class="wrap"><div class="chrome"><div class="chromeTitle">KRS Pop-Up Alert</div><button class="close" onclick="closePopup()" title="Stäng">×</button></div><div class="frame"></div><div class="inner"></div><div class="beam1"></div><div class="beam2"></div><div class="content"><div class="title" id="title">ChatGPT svar klart</div><div class="body" id="body">ChatGPTs svar är klart.</div><div class="actions"><button onclick="closePopup()">Stäng</button></div></div></div>
+</body>
+</html>
